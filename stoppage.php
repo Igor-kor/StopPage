@@ -1,11 +1,12 @@
 <?php
 /*
 Plugin Name:  Stoppage
-Plugin URI: https://github.com/Igor-kor/StopPage.git
+Plugin URI: https://github.com/Igor-kor/StopPage
 Description: Заглушка для посетителей
 Version: 1
 Author: Игорь Шарангия
 Author URI: https://vk.com/id117766113
+GitHub Plugin URI: https://github.com/Igor-kor/StopPage
 */
 
 function onlyadmin_func()
