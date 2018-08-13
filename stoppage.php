@@ -49,5 +49,5 @@ function onlyadmin_func()
     }
 }
 
-add_action('get_header', 'onlyadmin_func');
+add_action('template_redirect', 'onlyadmin_func');
 ?>
