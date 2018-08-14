@@ -3,7 +3,7 @@
 Plugin Name:  Stoppage
 Plugin URI: https://github.com/Igor-kor/StopPage
 Description: Заглушка для посетителей
-Version: 1
+Version: 1.1
 Author: Игорь Шарангия
 Author URI: https://vk.com/id117766113
 GitHub Plugin URI: https://github.com/Igor-kor/StopPage
@@ -12,6 +12,8 @@ GitHub Plugin URI: https://github.com/Igor-kor/StopPage
 function onlyadmin_func()
 {
     if (!current_user_can('manage_options')) {
+        header('HTTP/1.1 503 Service Temporarily Unavailable');
+        header('Status: 503 Service Temporarily Unavailable');
         ?>
         <style>
             #textstop {
